@@ -1,8 +1,11 @@
-# This bot requires the 'message_content' intent.
+#----- This bot requires the 'message_content' intent.
 
 import discord
 from discord import app_commands
+from dotenv import load_dotenv
 
+load_dotenv()
+TOKEN = os.getenv('BOT_TOKEN')
 
 
 #----- Bot
@@ -50,4 +53,4 @@ async def on_message(message):
 
 
 #----- Token
-client.run('MTEzNTY3MDM3MzA0ODkxODEwNg.GRzjHU.goYL-hpimCJrJFpTVcy8_NshWR6ctRF8COLbSc')
+client.run('TOKEN')
